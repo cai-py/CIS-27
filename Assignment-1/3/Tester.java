@@ -28,6 +28,8 @@ public class Tester{
         System.out.println("Department: " + P3.getDepartment());
         System.out.println("Hourly Rate: " + P3.getHourlyRate());
         System.out.println("Hours per week: " + P3.getHoursPerWeek());
+        System.out.println("Hours per 4 weeks: " + P3.getTotalHours());
+        System.err.println("Pay per 4 weeks: " + P3.getTotalWage());
         System.out.println("ID: " + P3.getId());
         System.out.println();
 

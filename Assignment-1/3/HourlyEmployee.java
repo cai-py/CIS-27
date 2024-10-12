@@ -15,6 +15,8 @@ public class HourlyEmployee extends Person {
     public String getDepartment() {return department;}
     public Double getHourlyRate() {return hourlyRate;}
     public Double getHoursPerWeek() {return hoursPerWeek;}
+    public Double getTotalHours() {return hoursPerWeek * 4;}
+    public Double getTotalWage() {return hourlyRate * getTotalHours();}
 
     // set methods
     public void setDepartment(String department) {

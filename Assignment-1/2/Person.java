@@ -23,6 +23,12 @@ public class Person {
     public void setLastName(String lastName) {this.lastName = lastName;}
 
     // to string method
+    /* 
+    %s %s (ID: %d): This format string specifies how the object's data should be presented:
+        * The first %s will be replaced by the value of firstName.
+        * The second %s will be replaced by the value of lastName.
+        * The %d will be replaced by the value of id, which is expected to be an integer.
+     */
     public String toString() {return String.format("%s %s (ID: %d)", firstName, lastName, id);}
 }
 

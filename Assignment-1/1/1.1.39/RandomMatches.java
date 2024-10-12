@@ -1,7 +1,4 @@
 import java.util.*;
-import java.util.Random;
-import java.util.HashMap;
-import java.util.Scanner;
 
 public class RandomMatches {
     public static boolean binarySearch(int[] arr, int n) {
@@ -45,6 +42,7 @@ public class RandomMatches {
         // create a Hashmap of results
         // "\T trials \N values  -  average matches
         HashMap<Integer, Double> Results = new HashMap<>();
+        // create array for each value of N to loop over it
         int[] NValues = {1000, 10000, 100000, 1000000};
         // get T
         Scanner scanner = new Scanner(System.in);
