@@ -32,9 +32,6 @@ public class Thermostat {
             System.out.println("Current Temperature: " + currentTemp);
         }
 
-
-
-
         // if (temp < min) {
         //     // throw temptoohigh error
         //     throw new TempTooLow(temp + " degrees is too low. Min allowed is " + min);

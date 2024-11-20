@@ -3,7 +3,9 @@ public class Tester {
         String infixExpression = "3+2+5*5-(3*9)";
         System.out.println(infixExpression);
         String postfixExpression = InfixToPostfix.convert(infixExpression);
-        System.out.println("Postfix Expression: " + postfixExpression);
+        System.out.println("Postfix Expression: " + postfixExpression); // 32+55*+39*-
+
+        System.out.println("Result: " + EvaluatePostfix.convert(postfixExpression));
     }
 }
 

@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Assignment-1",
-    "\\Assignment-1\\2"
+    "\\Assignment-1\\2",
+    "\\Assignment-5",
+    "\\Assignment-5\\Union-Find-Maze",
+    "\\Temp"
   ],
-  "SelectedNode": "\\Assignment-1\\2\\Person.java",
+  "SelectedNode": "\\Temp\\MazeGenerator.java",
   "PreviewInSolutionExplorer": false
 }

@@ -12,34 +12,40 @@ public class InfixToPostfix {
             }else if (c == '(') {
                 stack.push(c);
             }else if (c == ')') {
-                while (stack.peek() != '(') {
+                while (!stack.isEmpty()&& stack.peek() != '(') {
                     postfix.append(stack.pop());
                 }
+                stack.pop();
             }else if (isOperator(c)) {
-                if (stack.isEmpty() || precedence(c) > precedence(stack.peek()) || stack.peek() == '(') {
-                    stack.push(c);
-                }else {
+//                if (stack.isEmpty() || precedence(c) > precedence(stack.peek()) || stack.peek() == '(') {
+                if (!stack.isEmpty() && precedence(c) <= precedence(stack.peek()) && stack.peek() != '(') {
                     while (!stack.isEmpty() && precedence(c) <= precedence(stack.peek())) {
                         postfix.append((stack.pop()));
                     }
-                    stack.push(c);
+
                 }
+                stack.push(c);
             }else if (c == ' ') {
                 continue;
             }else {System.out.println("ERROR");}
 
-
+//            while (!stack.isEmpty()) {
+//                postfix.append(stack.pop());
+//            }
 
             // 5 - 3 + 1
             // 5 - (3 + 1)
 
-            System.out.println("***********");
-            System.out.println(postfix); //
-            System.out.println(stack);
-            System.out.println(c);
+//            System.out.println("***********");
+//            System.out.println(postfix); //
+//            System.out.println(stack);
+//            System.out.println(c);
 
         }
 
+        while (!stack.isEmpty()) {
+            postfix.append(stack.pop());
+        }
         System.out.println(postfix);
 
         return postfix.toString();

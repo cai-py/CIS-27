@@ -39,9 +39,8 @@ public class Stack<Item> {
     public String toString() {
         String stack = "";
         for (Node<Item> n = first;n != null; n = n.next){
-            stack += n.item.toString();
+            stack = n.item.toString() + stack ;
         }
-
         return stack;
     }
 }
