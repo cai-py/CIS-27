@@ -10,7 +10,7 @@ public class MazeGenerator {
         this.size = size;
         edges = new ArrayList<>();
 
-        // Initialize all possible edges in the grid
+        // initialize all possible edges
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
                 int cell = row * size + col;
