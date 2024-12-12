@@ -1,0 +1,14 @@
+page 545 of textbook has an example of dfs
+
+5)
+
+1.4, 1.5, and more)
+
+connected componenets are the nodes connected in a graph
+
+strongly connected components are two nodes that are bi-directional or that are connected in suck a way that you can go back to the original node.
+
+1) get your graph
+2) reverse the edges of the graph
+3) bake a stack depending on the connections of the graph
+4) use the elements of the stack to look at the graph and use that to find the strongly connected components
